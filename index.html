@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCodeCamp Survey Fom</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for helping us improve your experience with this survey!</p>
+    </header>
+
+    <!-- The primary contents of the project html, consisting of my form and the various inputs contained within -->
+
+    <main>
+        <form action="" id="survey-form">
+
+            <!-- The first fieldset within this for which contains 
+                the labels and placeholders for name, email, age and a radio button set for gender -->
+
+            <fieldset>
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="name" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="email@email.com" required>
+
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" placeholder="Your Age" min="14" max="80">
+                <div class="selection">
+                <label>Select your gender:</label>
+                <label for="male">Male <input type="radio" name="gender" id="male" value="male" checked></label>
+                
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+            </fieldset>
+
+            <!-- The second fieldset which contains a dropdown menu with the question of the preferred
+                 framework of the individual being surveyed. -->
+            <fieldset>
+                <label for="dropdown">What is your preferred front-end framework? <select id="dropdown">
+                    <option name="react">React</option>
+                    <option name="angular">Angular</option>
+                    <option name="bootstrap">Bootstrap</option>
+                    <option name="tailwind">Tailwind</option>
+                    <option name="materialize">Materialize</option>
+                </select></label> 
+                <label id="colors">What are your favorite colors (check all that apply)?
+                <label>Red <input type="checkbox" value="red"></label>
+                <label>Green <input type="checkbox" value="green"></label>
+                <label>Orange <input type="checkbox" value="orange"></label>
+                <label>Purple <input type="checkbox" value="purple"></label>
+                <label>Silver <input type="checkbox" value="silver"></label>
+                <label>Black <input type="checkbox" value="black"></label>
+            </label>
+            </fieldset>
+            <fieldset>
+                <label for="comment">Please leave any comments or additiona feedback below: </label>
+                <textarea rows=10 cols=60 id='comment'></textarea>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
+</body>
+</html>
